@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Docker Blog</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      height:100vh;
+      background:linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)),
+      url('https://images.unsplash.com/photo-1605745341112-85968b19335b?q=80&w=1200&auto=format&fit=crop') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:60px;
+      color:#38bdf8;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:20px;
+      color:#cbd5e1;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 32px;
+      background:#38bdf8;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      transition:0.3s;
+      font-weight:600;
+    }
+
+    .btn:hover{
+      background:#0ea5e9;
+      transform:translateY(-3px);
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .title h2{
+      font-size:40px;
+      color:#38bdf8;
+    }
+
+    .blog-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#1e293b;
+      border-radius:20px;
+      overflow:hidden;
+      transition:0.4s;
+      box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card-content h3{
+      color:#38bdf8;
+      margin-bottom:15px;
+      font-size:24px;
+    }
+
+    .card-content p{
+      color:#cbd5e1;
+      margin-bottom:20px;
+    }
+
+    .read-btn{
+      text-decoration:none;
+      color:white;
+      background:#38bdf8;
+      padding:10px 20px;
+      border-radius:30px;
+      display:inline-block;
+      transition:0.3s;
+    }
+
+    .read-btn:hover{
+      background:#0284c7;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#020617;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:42px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="hero">
+      <h1>Docker Blog</h1>
+      <p>
+        Learn Docker, Containers, DevOps & Deployment with modern tutorials and real-world projects.
+      </p>
+      <a href="#" class="btn">Explore Blogs</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="title">
+      <h2>Latest Docker Articles</h2>
+    </div>
+
+    <div class="blog-container">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1200&auto=format&fit=crop" alt="Docker">
+        <div class="card-content">
+          <h3>What is Docker?</h3>
+          <p>
+            Understand Docker basics, containers, images, and why Docker is important for DevOps.
+          </p>
+          <a href="#" class="read-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?q=80&w=1200&auto=format&fit=crop" alt="Docker Setup">
+        <div class="card-content">
+          <h3>Docker Installation</h3>
+          <p>
+            Step-by-step guide to install Docker on Ubuntu, Windows, and Mac systems.
+          </p>
+          <a href="#" class="read-btn">Read More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=1200&auto=format&fit=crop" alt="Docker Project">
+        <div class="card-content">
+          <h3>Dockerize Your App</h3>
+          <p>
+            Learn how to containerize HTML, CSS, PHP, and Node.js applications using Docker.
+          </p>
+          <a href="#" class="read-btn">Read More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Docker Blog | Designed by Sahi Katari</p>
+  </footer>
+
+</body>
+</html>
